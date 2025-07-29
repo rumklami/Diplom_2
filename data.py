@@ -1,10 +1,12 @@
-class Url:
-    BASE_PAGE = 'https://stellarburgers.nomoreparties.site'
-    CREATE_ORDERS = '/api/orders'
-    REGISTRATION_USER = '/api/auth/register'
-    LOGIN_USER = '/api/auth/login'
-    DELETE_USER = '/api/auth/user'
-    INGREDIENTS = '/api/ingredients'
+from curl import BASE_PAGE
+
+
+class Endpoints:
+    CREATE_ORDERS = f'{BASE_PAGE}/api/orders'
+    REGISTRATION_USER = f'{BASE_PAGE}/api/auth/register'
+    LOGIN_USER = f'{BASE_PAGE}/api/auth/login'
+    DELETE_USER = f'{BASE_PAGE}/api/auth/user'
+    INGREDIENTS = f'{BASE_PAGE}/api/ingredients'
 
 
 class CreateUserResponseAnswer:
